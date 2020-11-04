@@ -110,6 +110,7 @@ cmds = {'a':add, 'r':remove, 't':trust, 'd':doubt, 'q':quit, 'h':hint}
 
 def main():
     while True:
+        print('> ', end='')
         s = input().split(' ')
         cmd = s[0]
         args = s[1:] if len(s) > 1 else []
